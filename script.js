@@ -36,7 +36,7 @@ $(function () {
 
     /************************************gestion du menu burger************************************************************/
     'use strict'
-    
+
     let content = document.querySelector('#hamburger-content'),
         sideBarBody = document.querySelector("#hamburger-sidebar-body"),
         btn = document.querySelector("#hamburger-button"),

@@ -261,6 +261,11 @@ main>div.realisations>div.realisation1>p {
     font-size: x-large;
 }
 
+main>div.realisations>div.realisation1>ul#liste1 {
+    list-style-type: circle;
+    color: #000;
+}
+
 a.link:hover {
     color: orange;
     text-align: center;
@@ -277,6 +282,11 @@ main>div.realisations>div.realisation2 {
 main>div.realisations>div.realisation2>p {
     margin: 30px 20px 20px 20px;
     font-size: x-large;
+}
+
+main>div.realisations>div.realisation2>ul#liste2 {
+    list-style-type: circle;
+    color: #000;
 }
 
 #titreContact {

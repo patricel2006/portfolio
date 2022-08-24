@@ -76,17 +76,18 @@
         <div class="realisations">
             <div class="realisation1">
                 <p>Site d'accompagnement dans l'installation d'un OS Linux à domicile : </p>
-                <ul>
+                <ul id="liste1">
                     <li><a class="link" href="https://passer-a-linux.com/">https://passer-a-linux.com/</a></li>
                 </ul>
             </div>
             <div class="realisation2">
                 <p>Mon cv en ligne : </p>
-                <ul>
+                <ul id="liste2">
                     <li><a class="link" href="https://cyborgwebdev.com/">https://cyborgwebdev.com/</a></li>
 
                     <li><a class="cv link"
-                            href="https://drive.google.com/file/d/1f2Ehs8Nb3NlQT4eQsKB8XASBqfyq0WRM/view?usp=sharing">Télécharger mon cv</a></li>
+                            href="https://drive.google.com/file/d/1f2Ehs8Nb3NlQT4eQsKB8XASBqfyq0WRM/view?usp=sharing">Télécharger
+                            mon cv</a></li>
                 </ul>
             </div>
         </div>
@@ -99,34 +100,33 @@
 
 
         <div class="contact">
-                <h2 id="formulaireContact" class="text-center">Formulaire de contact</h2>
-                <h4>Pour toute demande d'installation, veuillez remplir le formulaire de contact. Merci et à bientôt.
-                </h4>
-                <hr>
-                <form method="post" action="php_mailer.php" class="form-control">
-                    <label for="nom">Votre nom :</label>
-                    <input type="text" name="nom" id="nom" class="form-control" value="confais">
-                    <div class="alert alert-danger d-none" role="alert"></div>
-                    <br><br>
-                    <label for="prenom">Votre prénom :</label>
-                    <input type="text" name="prenom" id="prenom" class="form-control" value="theo">
-                    <div class="alert alert-danger d-none" role="alert"></div>
-                    <br><br>
-                    <label for="email">Votre email : </label>
-                    <input type="email" name="email" id="email" class="form-control" value="theoconfais@gmail.com">
-                    <div class="alert alert-danger d-none" role="alert"></div>
-                    <br><br>
-                    <label for="message">Votre message : </label>
-                    <br>
-                    <textarea name="message" id="message" cols="30" rows="10"
-                        class="form-control"></textarea>
-                    <div class="alert alert-danger d-none" role="alert"></div>
-                    <br>
-                    <button type="submit" class="btn btn-primary m-2" name="submit">Envoyer</button>
-                    <input id="reset" type="reset" class="btn btn-warning m-2" value="Effacer">
-                </form>
+            <h2 id="formulaireContact" class="text-center">Formulaire de contact</h2>
+            <h4>Pour toute demande d'installation, veuillez remplir le formulaire de contact. Merci et à bientôt.
+            </h4>
+            <hr>
+            <form method="post" action="php_mailer.php" class="form-control">
+                <label for="nom">Votre nom :</label>
+                <input type="text" name="nom" id="nom" class="form-control" value="confais">
+                <div class="alert alert-danger d-none" role="alert"></div>
+                <br><br>
+                <label for="prenom">Votre prénom :</label>
+                <input type="text" name="prenom" id="prenom" class="form-control" value="theo">
+                <div class="alert alert-danger d-none" role="alert"></div>
+                <br><br>
+                <label for="email">Votre email : </label>
+                <input type="email" name="email" id="email" class="form-control" value="theoconfais@gmail.com">
+                <div class="alert alert-danger d-none" role="alert"></div>
+                <br><br>
+                <label for="message">Votre message : </label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
+                <div class="alert alert-danger d-none" role="alert"></div>
+                <br>
+                <button type="submit" class="btn btn-primary m-2" name="submit">Envoyer</button>
+                <input id="reset" type="reset" class="btn btn-warning m-2" value="Effacer">
+            </form>
 
-                <!-- code php de traitement du formulaire 
+            <!-- code php de traitement du formulaire 
                     
                                 <?php
                                 /*********************************************************************************************** 
