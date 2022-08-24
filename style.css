@@ -1,0 +1,394 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/***************************HEADER****************************************/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    box-shadow: 0 1px 16px rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+    padding-block: 16px;
+    padding-left: 32px;
+    text-transform: uppercase;
+    position: relative;
+    height: 18vh;
+}
+
+#logo,
+nav,
+li {
+    display: inline-block;
+}
+
+#logo {
+    border-radius: 50%;
+    position: relative;
+}
+
+nav {
+    vertical-align: bottom;
+    padding-bottom: 10px;
+    height: 10vh;
+    margin-top: 80px;
+}
+
+li {
+    margin-left: 60px;
+}
+
+a,
+button {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+}
+
+#hamburger-button {
+    z-index: 9;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    background: #000;
+    color: #fff;
+    transform: translateY(-50%);
+    display: none;
+}
+
+
+section {
+    min-width: 100%;
+    height: 90vh;
+    background: url("../images/background.png") center;
+    background-size: cover;
+
+}
+
+
+#hamburger-content {
+    display: flex;
+}
+
+
+#hamburger-overlay {
+    position: fixed;
+    z-index: 10;
+    /*commme les calques en photoshop*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+#hamburger-sidebar {
+    position: fixed;
+    width: 85%;
+    z-index: 11;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    overflow-y: auto;
+    display: none;
+}
+
+#hamburger-sidebar li {
+    display: block;
+}
+
+#hamburger-sidebar-header {
+    background: url("../images/sidebar-header.jpg") center;
+    background-size: cover;
+    height: 150px;
+}
+
+#hamburger-sidebar-body {
+    padding-block: 15px;
+    padding-inline: 10px;
+}
+
+/***********************ecrans inferieurs à 992px - menu burger - *******************/
+
+@media screen and (max-width:992px) {
+    header {
+        background: red;
+    }
+
+    #hamburger-content {
+        display: none;
+    }
+
+    #hamburger-button,
+    #hamburger-sidebar,
+    .hamburger-activated #hamburger-overlay {
+        display: block;
+    }
+
+    .hamburger-activated #hamburger-sidebar {
+        transform: translateX(0);
+    }
+
+    #titreSite {
+        z-index: 1;
+    }
+
+    #logo {
+        z-index: 0;
+    }
+}
+
+/************************************fin du header**********************************/
+
+#titreSite {
+    color: orange;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 3rem;
+    position: absolute;
+    left: 150px;
+
+}
+
+header>div#hamburger>div#hamburger-content>figure {
+    border: 2px solid orange;
+    border-radius: 10%;
+    height: 8vh;
+}
+
+
+header>div#hamburger>div#hamburger-content>nav>ul>li>a {
+    color: black;
+    text-decoration: none;
+    margin: 0 auto 20px;
+}
+
+header>div#hamburger>div#hamburger-content>nav>ul>li>a:hover {
+    color: orange;
+}
+
+
+/********************************main-content********************************/
+
+
+
+main.main {
+    border: 2px solid orange;
+    min-height: 400px;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 20px;
+
+}
+
+main>div.presentation {
+    min-height: 150px;
+    width: 100%;
+    margin: 100px auto 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main>div>div.textePresentation {
+    border: 2px solid black;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+}
+
+#titrePresentation {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    padding-top: 70px;
+    color: orange
+}
+
+main>div>div.textePresentation>p {
+    margin: 30px 20px 20px 20px;
+    font-size: x-large;
+}
+
+main>div>div.image>img {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+}
+
+main>hr {
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+#titreRealisations {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    color: orange;
+}
+
+main>div.realisations {
+    min-height: 150px;
+    width: 100%;
+    margin: 100px auto 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main>div.realisations>div.realisation1 {
+    border: 2px solid black;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+}
+
+main>div.realisations>div.realisation1>p {
+    margin: 30px 20px 20px 20px;
+    font-size: x-large;
+}
+
+a.link:hover {
+    color: orange;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main>div.realisations>div.realisation2 {
+    border: 2px solid black;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 10px 10px black;
+}
+
+main>div.realisations>div.realisation2>p {
+    margin: 30px 20px 20px 20px;
+    font-size: x-large;
+}
+
+#titreContact {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: xx-large;
+    color: orange;
+}
+
+main>div>div.textePresentation>p {
+    margin: 30px 20px 20px 20px;
+    font-size: x-large;
+}
+
+main>div.contact {
+    min-height: 150px;
+    margin: 100px auto 150px;
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 80%;
+    box-shadow: 10px 10px black;
+}
+
+main>div.contact>p {
+    margin: 30px 20px 20px 20px;
+    font-size: x-large;
+}
+
+
+/*********************************page de contact**********************/
+div.contact>h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+div.contact>hr {
+    margin: 30px 20px 20px 20px;
+}
+
+div.contact>form>label {
+    text-align: center;
+    margin: 50px 50px 50px 50px;
+    font-weight: bold;
+    display: inline-block;
+    font-size: large;
+}
+
+div.contact>form>input {
+    border: 1px solid black;
+    display: inline-block;
+    width: 60%;
+    height: 6vh;
+    font-size: large;
+}
+
+div.contact>form>textarea {
+    border: 1px solid black;
+    display: inline-block;
+    width: 80%;
+    margin: 10px auto;
+}
+
+div.contact>form>textarea#message {
+    margin: 30px 30px 20px 50px;
+    font-size: x-large;
+}
+
+h4 {
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
+    font-weight: normal;
+    font-size: x-large;
+}
+
+#conteneurFormulaire {
+    border: 3px solid black;
+    border-radius: 10px;
+    margin: 30px auto;
+}
+
+#formulaireContact {
+    margin: 30px auto;
+}
+
+div.contact>form>input#reset {
+    margin: 30px 20px 40px 150px;
+    width: 20%;
+    height: 7vh;
+}
+
+div.contact>form>button {
+    margin: 30px 20px 40px 150px;
+    width: 20%;
+    height: 7vh;
+}
+
+
+/************************************FOOTER****************************/
+
+footer {
+    background-color: black;
+    min-height: 150px;
+}
+
+footer>div.footer {
+    width: 50%;
+    margin: 100px auto;
+}
+
+footer>div>p {
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
